@@ -1,15 +1,15 @@
 import pandas as pd
 import numpy as np
 
-from checks.benford_check import BenfordCheck
-from checks.outliers_check import OutliersCheck
-from checks.constant_check import ConstantCheck
-from checks.low_variation_check import LowVariationCheck
-from checks.round_numbers_check import RoundNumbersCheck
-from checks.ends_with_0_or_5_check import EndsWith0or5Check
-from checks.date_weekend_check import DateWeekendCheck
-from checks.logical_correlation_check import LogicalCorrelationCheck
-from checks.custom_check import CustomCheck
+from benford_check import BenfordCheck
+from outliers_check import OutliersCheck
+from constant_check import ConstantCheck
+from low_variation_check import LowVariationCheck
+from round_numbers_check import RoundNumbersCheck
+from ends_with_0_or_5_check import EndsWith0or5Check
+from date_weekend_check import DateWeekendCheck
+from logical_correlation_check import LogicalCorrelationCheck
+from custom_check import CustomCheck
 
 CHECK_REGISTRY = {
     'benford': BenfordCheck,
